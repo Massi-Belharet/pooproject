@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mode Console</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <img src="img/logo2.png" alt="logo" class="logo">
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="diagrams.html">Diagrammes</a>
+            <a href="console.html">Mode Console</a>
+            <a href="graphique.html">Mode Graphique</a>
+            <a href="conclusion.html">Bilan</a>
+        </nav>
+    </header>
+    <main>
+        <div id="console">
+            <h1>Mode Console</h1>
+            <p>Cette section explore les fonctionnalités clés de notre mode console, détaillant les différentes options
+                de ligne de commande, les actions disponibles et la manière dont notre application fournit des
+                informations utiles aux utilisateurs. Nous mettons en lumière les principaux scénarios d'utilisation de
+                mode console, démontrant comment elle facilite la gestion des fichiers Python, la détection
+                d'annotations de type et l'évaluation de la qualité du code. 
+            </p>
+            <p>
+                Les paramètres attendus en ligne de commande sont le nom du dossier ou du fichier à explorer, avec
+                des options pour spécifier le type d'entrée et les actions souhaitées.
+            </p>
+
+            <figure>
+                <img src="img/console.jpg" alt="console mode" class="src">
+                <figcaption>Console Mode Parameters</figcaption>
+            </figure>
+            <section class="Examples">
+                <h2>Exemples d'utilisation</h2>
+                <p><strong>java -jar cli.jar -d ./: </strong>Liste tous les fichiers Python à partir du dossier spécifié par la classe Listfilepy.</p>
+                <figure>
+                    <img src="img/test_console.jpg" alt="tester mode console" class="src">
+                    <figcaption>Test Console Mode</figcaption>
+                </figure>
+                <p><strong>java -jar cli.jar -f ./add.py --type:</strong> Analyser des fichiers Python pour détecter les annotations de type par la méthode <strong>runMypy().</strong></p>
+                <p><strong>java -jar cli.jar -f ./add.py --pydoc:</strong> Identifier les fonctions sans commentaires "PyDoc" dans les fichiers Python par la méthode <strong>checkpydoc().</strong></p>
+                <p><strong>java -jar cli.jar -f ./add.py –head :</strong> Vérifier la présence des commentaires d'en-tête par la méthode <strong>hascommentheader().</strong> </p>
+                <figure>
+                    <img src="img/test_console2.jpg" alt="tester mode console" class="src">
+                    <figcaption>Test Console Mode</figcaption>
+                </figure>
+            </section>
+        </div>
+        <a href="diagrams.html" class="bouton">Page Précédente</a> 
+        <a href="graphique.html" class="bouton">Page Suivante</a>
+    </main>
+
+    <footer>
+        <img src="img/logo cergy.png" alt="logo_université" class="logo_université">
+        <span>© Copyright 2024</span>
+        <div class="info">
+            <p>Licence 2 Informatique</p>
+            <p>CY Cergy Paris Université</p>
+        </div>
+        
+    </footer>
+</body>
+</html>

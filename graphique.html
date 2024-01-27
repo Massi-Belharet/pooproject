@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mode Graphique</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <img src="img/logo2.png" alt="logo" class="logo">
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="diagrams.html">Diagrammes</a>
+            <a href="console.html">Mode Console</a>
+            <a href="graphique.html">Mode Graphique</a>
+            <a href="conclusion.html">Bilan</a>
+        </nav>
+    </header>
+    <main>
+        <div id="graphique">
+            <h1>Mode Graphique</h1>
+            <p>
+                Cette section abordera les détails de la version graphique en utilisant la bibliothèque Swing. Nous discuterons des composants d'interface, des interactions utilisateur, et des améliorations visuelles apportées à l'expérience utilisateur.
+            </p>
+            <p>
+                <strong>java -jar GUI.jar:</strong> Cette commande permet de lancer l'interface graphique à partir de console.
+            </p>
+            <section id="HomePage">
+                <h2>Home Page</h2>
+                <p>La classe HomePage représente le point d'entrée visuel de notre application. Les utilisateurs peuvent ajouter un dossier à analyser en utilisant un bouton dédié. Une fois sélectionné, la classe MainPage prend le relais pour afficher l'arborescence complète du répertoire choisi.</p>
+                <figure>
+                    <img src="img/homepage.png" alt="HomePage" class="src">
+                    <figcaption>Home Page</figcaption>
+                </figure>
+            </section>
+            <section id="MainPage">
+                <h2>Main Page</h2>
+                <p>La méthode <strong>updateTreeModel()</strong> de la classe MainPage assure l'affichage de l'arborescence du répertoire sélectionné, incluant les fichiers Python à analyser. Des filtres intuitifs permettent aux utilisateurs de choisir le type d'analyse à appliquer aux fichiers, avec des résultats statistiques détaillés pour le répertoire analysé. </p>
+                <figure>
+                    <img src="img/mainpage.png" alt="MainPage" class="src">
+                    <figcaption>Main Page</figcaption>
+                </figure>
+            </section>
+            <section id="ResultPage">
+                <h2>Results Page</h2>
+                <p>La classe ResultPage offre une vue détaillée des résultats des analyses effectuées sur les fichiers Python du répertoire. Les informations fournies comprennent les annotations de type détectées, et d'autres analyses liées à la qualité du code. </p>
+                <figure>
+                    <img src="img/resultpage.png" alt="resultpage" class="src">
+                    <figcaption>Results Page</figcaption>
+                </figure>
+            </section>
+            <section id="Editeur">
+                <h2>Éditeur de code</h2>
+                <p>Pour une manipulation plus approfondie, la classe PythonEditorFrame fournit un environnement dédié à l'édition des fichiers Python. Les utilisateurs peuvent effectuer des modifications directes grâce à cette interface, offrant une flexibilité accrue dans le processus de développement. </p>
+                <figure>
+                    <img src="img/editpage.png" alt="editpage" class="src">
+                    <figcaption>Edit Page</figcaption>
+                </figure>
+            </section>
+        </div>
+        <a href="console.html" class="bouton">Page Précédente</a> 
+        <a href="conclusion.html" class="bouton">Page Suivante</a>
+    </main>
+
+    <footer>
+        <img src="img/logo cergy.png" alt="logo_université" class="logo_université">
+        <span>© Copyright 2024</span>
+        <div class="info">
+            <p>Licence 2 Informatique</p>
+            <p>CY Cergy Paris Université</p>
+        </div>
+    </footer>
+</body>
+</html>
